@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Burbitskaya/table-task/static/css/main.f855e6bc.css",
+    "main.js": "/Burbitskaya/table-task/static/js/main.08b81bcb.js",
+    "static/js/453.df5bad83.chunk.js": "/Burbitskaya/table-task/static/js/453.df5bad83.chunk.js",
+    "index.html": "/Burbitskaya/table-task/index.html",
+    "main.f855e6bc.css.map": "/Burbitskaya/table-task/static/css/main.f855e6bc.css.map",
+    "main.08b81bcb.js.map": "/Burbitskaya/table-task/static/js/main.08b81bcb.js.map",
+    "453.df5bad83.chunk.js.map": "/Burbitskaya/table-task/static/js/453.df5bad83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.08b81bcb.js"
+  ]
+}
