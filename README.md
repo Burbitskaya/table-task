@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Таблица с CRUD операциями на React + TypeScript + Ant Design
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение представляет собой таблицу с возможностью добавления, редактирования и удаления записей. Реализована сортировка по всем колонкам (с учётом типа данных), поиск по всем ячейкам таблицы, а также локализация на русский язык. Проект выполнен в рамках тестового задания.
 
-## Available Scripts
+## Используемые технологии
 
-In the project directory, you can run:
+- **React 19** (Create React App)
+- **TypeScript** – строгая типизация
+- **Ant Design 6** – UI-компоненты (таблица, модальное окно, форма, кнопки, иконки)
+- **Day.js** – работа с датами
+- **UUID** – генерация уникальных идентификаторов
+- **Ant Design Icons** – иконки для действий
 
-### `npm start`
+## Функциональные возможности
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Таблица** с колонками: Имя, Дата, Значение, Действия
+- **Сортировка** по каждой колонке:
+  - по имени – алфавитная сортировка
+  - по дате – сортировка по временной метке
+  - по значению – числовая сортировка
+- **Поиск** по всем полям (включая имя, дату, значение). Поле поиска расположено над таблицей.
+- **Добавление записи** – кнопка «Добавить» открывает модальное окно с формой. Поля: имя (текст), дата (выбор даты), значение (число). Все поля обязательны, значение должно быть положительным числом.
+- **Редактирование записи** – кнопка «Редактировать» в строке открывает модальное окно с уже заполненными данными, после изменения данные обновляются.
+- **Удаление записи** – кнопка «Удалить» в строке удаляет запись.
+- **Локализация** – все тексты Ant Design (подсказки сортировки, пагинация, датапикер) переведены на русский язык через `ConfigProvider`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Установка и запуск
 
-### `npm test`
+1. **Клонируйте репозиторий**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Установите зависимости**
+    ```bash
+    npm install
 
-### `npm run build`
+3. **Запустите приложение в режиме разработки**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Приложение будет доступно по адресу http://localhost:3000.
