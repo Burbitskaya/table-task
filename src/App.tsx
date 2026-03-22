@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 import {IDataItem} from "./types";
 import { Button, Input, Space } from 'antd';
 import ItemModal from "./components/ItemModal";
+import { ConfigProvider } from 'antd';
+import ruRU from 'antd/locale/ru_RU';
 
 const { Search } = Input;
 
@@ -61,6 +63,7 @@ const App: React.FC = () => {
   };
 
   return (
+     <ConfigProvider locale={ruRU}>
       <div style={{ padding: 20 }}>
         <Space orientation="vertical" size="middle" style={{ width: '100%' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -85,6 +88,7 @@ const App: React.FC = () => {
             title={editingItem ? 'Редактировать запись' : 'Добавить запись'}
         />
       </div>
+      </ConfigProvider>
   );
 };
 
